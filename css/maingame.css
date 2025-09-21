@@ -53,6 +53,7 @@
 .main-game-container .choices .multiple-choice .answer-button {
   border-radius: 15px;
   background: #ffffff;
+  border-style: none;
 }
 .main-game-container .choices .multiple-choice .answer-button h1 {
   color: #ff05b0;

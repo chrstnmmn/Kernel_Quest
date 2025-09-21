@@ -34,6 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		};
 
 		console.log("Submitted:", formData);
-    clearForm();
+		clearForm();
 	});
 });
