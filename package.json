@@ -1,0 +1,20 @@
+{
+	"name": "kernel_quest",
+	"version": "1.0.0",
+	"description": "online quiz app",
+	"main": "script/index.js",
+	"scripts": {
+		"sass": "sass --watch scss:css"
+	},
+	"keywords": [
+		"sass",
+		"scss",
+		"css",
+		"webdev"
+	],
+	"author": "Group 5",
+	"license": "MIT",
+	"devDependencies": {
+		"sass": "^1.77.0"
+	}
+}
