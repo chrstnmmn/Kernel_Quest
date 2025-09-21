@@ -1,0 +1,95 @@
+@import "index.scss";
+
+.lobby {
+	width: 100%;
+	max-width: 30rem;
+	.lobby-container {
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		padding-inline: 1rem;
+		.title {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.player-count {
+			.count-title {
+				h1 {
+					color: $Main_Text;
+					font-family: $Main_Font;
+					font-size: 1.25rem;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+				}
+			}
+
+			.player-container {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5rem;
+				.player-card {
+					height: 3.12869rem;
+					border-radius: 0.9375rem;
+					background: $Accent_White;
+
+					padding-inline: 1rem;
+
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					gap: 0.5rem;
+
+					.player-name {
+						color: $Accent_Text;
+						font-family: $Main_Font;
+						font-size: 1.25rem;
+						font-style: normal;
+						font-weight: 700;
+						line-height: normal;
+					}
+				}
+			}
+		}
+
+		.quit-button {
+      margin-top: 10rem;
+      width: 100%;
+
+			border-radius: 15px;
+			border: 2px solid $Accent_White;
+			background: $Accent_Text;
+			outline: none;
+			box-shadow: $Shadow_Text;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			column-gap: 0.3rem;
+			padding: 1;
+			cursor: pointer;
+
+			transition: all 0.3s ease;
+
+			h1 {
+				color: $Accent_White;
+				text-align: center;
+				font-family: $Main_Font;
+				font-size: 1.5rem;
+				font-weight: 900;
+				text-transform: uppercase;
+			}
+
+			&:hover {
+				transform: translateY(-3px) scale(1.02);
+				box-shadow: 0 0 25px $Accent_Text;
+			}
+
+			&:active {
+				transform: scale(0.97);
+			}
+		}
+	}
+}
