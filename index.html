@@ -2,9 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
 			rel="stylesheet"
@@ -13,7 +12,35 @@
 		<title>Kernel Quest</title>
 	</head>
 	<body>
-		<div id="root"></div>
-		<script type="module" src="/src/main.jsx"></script>
+		<div class="container">
+			<h1 class="title">Welcome to the Game</h1>
+
+			<div class="form-container">
+				<form id="userForm" class="form">
+					<input
+						type="text"
+						name="firstName"
+						id="firstName"
+						placeholder="First name"
+						class="name-input"
+						required
+					/>
+
+					<input
+						type="text"
+						name="lastName"
+						id="lastName"
+						placeholder="Last Name"
+						class="name-input"
+						required
+					/>
+
+					<h4>are you ready?</h4>
+
+					<button type="submit" class="CTA-button">Enter game</button>
+				</form>
+			</div>
+		</div>
+		<script src="./script/index.js"></script>
 	</body>
 </html>

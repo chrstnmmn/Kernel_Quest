@@ -1,0 +1,38 @@
+body {
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161616;
+    color: #f7f7f7;
+}
+
+.CTA-button {
+    height: 59.348px;
+    border-radius: 15px;
+    border: 1px solid var(--NEON_YELLOW, #e0faff);
+    background: #ff05b0;
+    /* NEON_YELLOW_GLOW */
+    box-shadow: 0 0 19.3px 0 #ff0084;
+}
+
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form-container .form .name-input {
+    background-color: #ffffff;
+    width: 338.645px;
+    height: 50.059px;
+    border-radius: 15px;
+    padding-inline: 1rem;
+    border-style: none;
+    color: #ff05b0;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

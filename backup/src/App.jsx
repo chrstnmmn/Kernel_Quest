@@ -1,12 +1,5 @@
 import { useState } from "react";
-
-function Title() {
-	return (
-		<div className="Title">
-			<h1>Kernel Quest</h1>
-		</div>
-	);
-}
+import Title from "./Title";
 
 function UserInfo() {
 	const [formData, setFormData] = useState({
@@ -28,12 +21,12 @@ function UserInfo() {
 
 	return (
 		<div className="form-container">
-			<h3 className="form-title">Enter Your Name</h3>
 			<form onSubmit={handleSubmit} className="form">
 				<input
 					type="text"
 					name="firstName"
-					placeholder="First Name"
+					placeholder="First name"
+					className="name-input"
 					value={formData.firstName}
 					onChange={handleChange}
 					required
@@ -43,14 +36,15 @@ function UserInfo() {
 					type="text"
 					name="lastName"
 					placeholder="Last Name"
+					className="name-input"
 					value={formData.lastName}
 					onChange={handleChange}
 					required
 				/>
 
-				<h4>are you aready?</h4>
+				<h4>are you ready?</h4>
 
-				<button type="submit">Enter game</button>
+				<button type="submit" className="CTA-button">Enter game</button>
 			</form>
 		</div>
 	);

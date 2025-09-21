@@ -1,0 +1,54 @@
+$Main_Color: #161616;
+$Main_Text: #f7f7f7;
+$Accent_Text: #ff05b0;
+$Accent_White: #ffffff;
+$Shadow_Text: 0 0 19.3px #ff0084;
+$Stroke: 0.05rem;
+$Neon_Stroke: #e0faff;
+
+$Main_Font: "Inter", sans-serif;
+
+body {
+	font-family: $Main_Font;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $Main_Color;
+	color: $Main_Text;
+}
+
+.CTA-button {
+	height: 59.348px;
+	border-radius: 15px;
+	border: 1px solid var(--NEON_YELLOW, #e0faff);
+	background: #ff05b0;
+
+	/* NEON_YELLOW_GLOW */
+	box-shadow: 0 0 19.3px 0 #ff0084;
+}
+
+.form-container {
+	.form {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		.name-input {
+			background-color: $Accent_White;
+			width: 338.645px;
+			height: 50.059px;
+			border-radius: 15px;
+			padding-inline: 1rem;
+
+			border-style: none;
+
+			color: $Accent_Text;
+			font-family: Inter;
+			font-size: 1.25rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+		}
+	}
+}
