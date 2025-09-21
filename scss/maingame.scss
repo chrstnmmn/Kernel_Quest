@@ -1,0 +1,112 @@
+@import "index.scss";
+
+.main-game-container {
+	width: 100%;
+	max-width: 30rem;
+
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	padding-inline: 1rem;
+
+	.title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.question-title {
+		color: $Main_Text;
+		text-align: center;
+		font-family: $Main_Font;
+		font-size: 2.25rem;
+		font-style: normal;
+		font-weight: 900;
+		line-height: normal;
+		text-transform: uppercase;
+	}
+
+	.situation {
+		color: $Main_Text;
+		font-family: $Main_Font;
+		font-size: 1.125rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	.question {
+		color: $Main_Text;
+		font-family: $Main_Font;
+		font-size: 1.125rem;
+		font-style: italic;
+		font-weight: 900;
+		line-height: normal;
+	}
+
+	.choices {
+		.choices-header {
+			color: $Main_Text;
+			font-family: $Main_Font;
+			font-size: 1.125rem;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
+		}
+
+		.multiple-choice {
+			display: flex;
+			flex-direction: column;
+			gap: 0.3rem;
+
+			.answer-button {
+				border-radius: 15px;
+				background: $Accent_White;
+
+				h1 {
+					color: $Accent_Text;
+					text-align: center;
+					font-family: $Main_Font;
+					font-size: 1.25rem;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+				}
+
+				&:hover {
+					background-color: $Accent_Text;
+					h1 {
+						color: $Accent_White;
+					}
+				}
+
+				&:active {
+					transform: scale(0.97);
+					background-color: $Accent_Text;
+					h1 {
+						color: $Accent_White;
+					}
+				}
+			}
+		}
+	}
+	.timer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.1rem;
+		h1 {
+			color: $Main_Text;
+			font-family: $Main_Font;
+			font-size: 1rem;
+			font-style: normal;
+			font-weight: 900;
+			line-height: normal;
+			text-transform: uppercase;
+		}
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

@@ -1,0 +1,98 @@
+.main-game-container {
+  width: 100%;
+  max-width: 30rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 1rem;
+}
+.main-game-container .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-game-container .question-title {
+  color: #f7f7f7;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.main-game-container .situation {
+  color: #f7f7f7;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main-game-container .question {
+  color: #f7f7f7;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 900;
+  line-height: normal;
+}
+.main-game-container .choices .choices-header {
+  color: #f7f7f7;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.main-game-container .choices .multiple-choice {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.main-game-container .choices .multiple-choice .answer-button {
+  border-radius: 15px;
+  background: #ffffff;
+}
+.main-game-container .choices .multiple-choice .answer-button h1 {
+  color: #ff05b0;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.main-game-container .choices .multiple-choice .answer-button:hover {
+  background-color: #ff05b0;
+}
+.main-game-container .choices .multiple-choice .answer-button:hover h1 {
+  color: #ffffff;
+}
+.main-game-container .choices .multiple-choice .answer-button:active {
+  transform: scale(0.97);
+  background-color: #ff05b0;
+}
+.main-game-container .choices .multiple-choice .answer-button:active h1 {
+  color: #ffffff;
+}
+.main-game-container .timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-game-container .timer h1 {
+  color: #f7f7f7;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=maingame.css.map */

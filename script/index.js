@@ -3,6 +3,19 @@ document.addEventListener("DOMContentLoaded", function () {
 	const firstNameInput = document.getElementById("firstName");
 	const lastNameInput = document.getElementById("lastName");
 
+	// Function to clear the input form
+	function clearForm() {
+		firstNameInput.value = "";
+		lastNameInput.value = "";
+
+		// Optional: Remove validation states if they exist
+		firstNameInput.classList.remove("is-valid", "is-invalid");
+		lastNameInput.classList.remove("is-valid", "is-invalid");
+
+		// Optional: Reset the form's validation state
+		form.classList.remove("was-validated");
+	}
+
 	// Handle form submission
 	form.addEventListener("submit", function (e) {
 		e.preventDefault();
@@ -21,6 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		};
 
 		console.log("Submitted:", formData);
-    
+    clearForm();
 	});
 });
