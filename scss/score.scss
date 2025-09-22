@@ -1,0 +1,106 @@
+@import "index.scss";
+
+.score {
+	width: 100%;
+	max-width: 30rem;
+	.score-container {
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		padding-inline: 1rem;
+
+		.title {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.score-count {
+      width: 100%;
+			.score-title {
+        transform: translateY(3rem);
+				h3 {
+					color: $Main_Text;
+					font-family: $Main_Font;
+					text-align: center;
+					font-size: 1.5rem;
+					font-style: normal;
+					font-weight: 900;
+					line-height: normal;
+					text-transform: uppercase;
+				}
+			}
+
+			.score {
+				h1 {
+					color: $Accent_Text;
+					text-align: center;
+
+					/* NEON_YELLOW_GLOW */
+					text-shadow: $Shadow_Text;
+					-webkit-text-stroke-width: 1px;
+					-webkit-text-stroke-color: $Main_Text;
+					font-family: $Main_Font;
+					font-size: 8rem;
+					font-style: normal;
+					font-weight: 900;
+					line-height: normal;
+					text-transform: uppercase;
+					margin: 0;
+				}
+
+				h2 {
+					color: $Neon_Stroke;
+					text-align: center;
+					font-family: $Main_Font;
+					font-size: 1.5rem;
+					font-style: normal;
+					font-weight: 900;
+					line-height: normal;
+					text-transform: uppercase;
+          
+          transform: translateY(-2.5rem);
+				}
+			}
+
+			.leaderboard-button {
+				margin-top: 5rem;
+				width: 100%;
+				height: 3.70925rem;
+
+				border-radius: 15px;
+				border: 2px solid $Accent_White;
+				background: $Accent_Text;
+				outline: none;
+				box-shadow: $Shadow_Text;
+
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				column-gap: 0.3rem;
+				padding: 1;
+				cursor: pointer;
+
+				transition: all 0.3s ease;
+
+				h1 {
+					color: $Accent_White;
+					text-align: center;
+					font-family: $Main_Font;
+					font-size: 1.5rem;
+					font-weight: 900;
+					text-transform: uppercase;
+				}
+
+				&:hover {
+					transform: translateY(-3px) scale(1.02);
+					box-shadow: 0 0 25px $Accent_Text;
+				}
+
+				&:active {
+					transform: scale(0.97);
+				}
+			}
+		}
+	}
+}
